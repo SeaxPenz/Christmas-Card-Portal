@@ -133,7 +133,7 @@
   pointer-events: none;
   width: 12px;
   height: 12px;
-  background: url('/assets/icons/dropdown-arrow.svg') no-repeat center;
+  background: url('/assets/images/icn_chevron_down.png') no-repeat center;
   background-size: contain;
 }
 
@@ -213,7 +213,7 @@
 .header-left {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between arrow and title */
+  gap: 10px;
 }
 
 .back-button {
@@ -227,7 +227,7 @@
   font-size: 18px;
   font-weight: bold;
   color: #333;
-  margin-left: 10px; /* Move title closer to the arrow */
+  margin-left: 10px;
 }
 
 .send-button {
@@ -238,7 +238,7 @@
   border-radius: 5px;
   cursor: pointer;
   position: absolute;
-  right: 20px; /* Move send button to the right */
+  right: 20px;
 }
 
 .send-button:hover {

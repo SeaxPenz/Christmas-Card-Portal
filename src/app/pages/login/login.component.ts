@@ -22,6 +22,5 @@ onSubmit() {
 console.log('Form submitted!');
 console.log('SAP ID:', this.sapId);
 console.log('Password:', this.password);
-// **Replace with your actual login logic**
 }
 }

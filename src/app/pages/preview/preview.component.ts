@@ -39,7 +39,7 @@ export class PreviewComponent {
   ];
 
   selectedColorName: string = '#000000';
-  selectedAlignment: string = 'left'; // Default alignment
+  selectedAlignment: string = 'left';
 
   constructor(private router: Router) {}
 
@@ -91,7 +91,7 @@ export class PreviewComponent {
   }
 
   updateAlignment(alignment: string): void {
-    this.selectedAlignment = alignment; // Update the selected alignment
+    this.selectedAlignment = alignment;
     console.log('Selected alignment:', alignment);
   }
 }

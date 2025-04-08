@@ -47,21 +47,6 @@ img {
   padding: 0;
 }
 
-/* .background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: -1;
-  background-image: url('/assets/images/cover.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
 .logo {
   aspect-ratio: 2.5;
   object-fit: contain;

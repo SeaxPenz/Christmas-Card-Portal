@@ -79,18 +79,6 @@ img {
     padding: 34px 80px 225px 30px;
 }
 
-/* .background-image {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url('/assets/images/cover.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-} */
-
 .company-logo {
     aspect-ratio: 3.57;
     object-fit: contain;

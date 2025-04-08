@@ -7,6 +7,8 @@
   overflow: hidden;
   font-family: Arial, sans-serif;
   padding: 20px 40px;
+  min-height: 100vh;
+  overflow-y: auto;
 }
 
 .portal-header {
@@ -102,11 +104,10 @@
   margin-top: 30px; 
   border: 1px solid #e3e6ea;
   border-radius: 8px;
-  overflow: hidden;
+  overflow: auto;
   border-collapse: collapse;
-    text-align: center;
-  }
-
+  text-align: center;
+}
 
 .table-header {
   background-color: #f9f9f9;
@@ -244,5 +245,17 @@
   .actions {
     flex-direction: column;
     gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .uploads-table {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 10px;
   }
 }

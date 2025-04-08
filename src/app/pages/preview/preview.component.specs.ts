@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./preview.component.css']
 })
 export class PreviewComponent {
-  title = 'Preview Page'; // Define the title property
+  title = 'Preview Page';
 }

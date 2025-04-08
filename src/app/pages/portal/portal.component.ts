@@ -23,13 +23,11 @@ export class PortalComponent {
   navigateToUploadContainer(type: string): void {
     this.showTypes = false;
     console.log(`Navigating to upload container for type: ${type}`);
-    // Use Angular Router instead of window.location
     this.router.navigate(['/upload-container'], { queryParams: { type } });
   }
 
   onView(item: any): void {
     console.log('Navigating to preview page for item:', item);
-    // Use Angular Router
     this.router.navigate(['/preview']);
   }
 

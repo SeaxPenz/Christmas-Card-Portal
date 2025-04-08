@@ -9,7 +9,7 @@ describe('PortalComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [PortalComponent],
-      imports: [RouterTestingModule] // Import RouterTestingModule for routerLink
+      imports: [RouterTestingModule] 
     }).compileComponents();
   });
 
