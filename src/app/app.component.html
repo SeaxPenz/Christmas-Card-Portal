@@ -1,7 +1,6 @@
 <div class="home-container">
   <div class="background-image"></div>
   <nav class="nav-links">
-
     <a href="/login">Home</a>
     <a href="/portal">Uploads</a>
     <a href="/add-new">Add New</a>
@@ -11,5 +10,18 @@
     <a href="/cancel-uploads">Cancel Uploads</a>
   </nav>
 </div>
+
+<button class="navbar-toggle" (click)="toggleNavbar()">
+  <img src="/assets/images/align-center.png" alt="Menu" />
+</button>
+<ul class="navbar-links" [class.active]="isNavbarOpen">
+  <li><a href="/login">Home</a></li>
+  <li><a href="/portal">Uploads</a></li>
+  <li><a href="/add-new">Add New</a></li>
+  <li><a href="/upload-container">Upload Container</a></li>
+  <li><a href="/preview">Preview</a></li>
+  <li><a href="/success-container">Upload Success</a></li>
+  <li><a href="/cancel-uploads">Cancel Uploads</a></li>
+</ul>
 
 <router-outlet></router-outlet>

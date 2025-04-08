@@ -13,14 +13,9 @@ import { CommonModule } from '@angular/common';
   encapsulation: ViewEncapsulation.Emulated
 })
 export class AppComponent {
-  title = 'ng-christmas-card-portal';
-  isLoginPage = false;
+  isNavbarOpen = false;
 
-  constructor(private router: Router) {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.isLoginPage = event.url === '/login';
-      }
-    });
+  toggleNavbar(): void {
+    this.isNavbarOpen = !this.isNavbarOpen;
   }
 }
