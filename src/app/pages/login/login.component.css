@@ -39,8 +39,10 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 200px; 
+  width: 220px; 
   height: auto;
+  margin-top: 15px;
+  margin-left: 10px;
   object-fit: contain;
   object-position: center;
   z-index: 11;
@@ -62,33 +64,33 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  margin: 150px 0 -10px -100px;
+  margin: 100px 0 -70px -220px;
   z-index: 11;
 }
 
 .title-section .welcome-one {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 28px;
+  font-weight: 550;
   color: #2c74fb;
   margin: 0;
 }
 
 .title-section .christmas {
-  font-size: 48px;
-  font-weight: bold;
+  font-size: 56x;
+  font-weight: 1500;
   color: #0033aa;
   margin: 10px 0 0 0;
 }
 
 .title-section .portal-title {
-  font-size: 18px;
+  font-size: 56px;
   color: #0033aa;
   margin: 4px 0 0 0;
   align-self: flex-start;
 }
 
 .christmas-decoration {
-  width: 300px;
+  width: 350px;
   height: auto;
   object-fit: contain;
   object-position: center;
@@ -97,15 +99,16 @@
 }
 
 .login-form-section {
+  align-self: center;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.24);
   display: flex;
   flex-direction: column;
   line-height: 1.3;
-  padding: 120px 60px 30px;
+  padding: 150px 50px 120px;
   z-index: 11;
-  max-width: 400px;
+  max-width: 450px;
   width: 100%;
   overflow: hidden; 
 }
@@ -117,7 +120,7 @@
   align-self: start;
   margin: 0;
   font-weight: 600;
-  margin-top: 0px;
+  margin-top: -60px;
   margin-bottom: -10px;
 }
 
@@ -126,7 +129,7 @@
   font-size: 16px;
   align-self: start;
   margin-top: 24px;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
   white-space: nowrap; 
 }
 
@@ -136,13 +139,14 @@
 }
 
 .form-group {
-  margin-top: 22px;
-  margin-right: -5px;
+  margin-top: 8px;
 }
 
 .form-input {
   width: 100%;
-  height: 48px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  height: 50px;
   padding: 12px;
   border-radius: 8px;
   border: 1px solid #5c6c80;
@@ -194,8 +198,10 @@
 
 .forgot-password {
   display: block;
-  margin-top: 10px; 
-  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  font-weight: 500;
+  font-size: 15px;
   color: #0062e1;
   text-align: center;
   text-decoration: none;
@@ -204,11 +210,13 @@
 
 .forgot-password:hover {
   text-decoration: underline;
+  font-weight: bold;
 }
 
 .login-footer-text {
-  margin-top: 20px; 
-  font-size: 14px;
+  margin-top: 5px; 
+  font-size: 16px;
+  font-weight: 500;
   color: #465463;
   text-align: center;
 }
