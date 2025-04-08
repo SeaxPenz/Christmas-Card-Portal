@@ -1,0 +1,49 @@
+<main class="home">
+  <header class="header">
+    <div class="logo-container">
+      <img
+        src="/assets/images/Stanbic.png"
+        class="logo"
+        alt="Stanbic IBTC Logo"
+      />
+    </div>
+    <div class="user-info">
+      <div class="user-profile">
+        <img
+          src="/assets/images/icn_people_profile.png"
+          class="user-avatar"
+          alt="User Avatar"
+        />
+        <span class="user-name">Abraham Ajetomobi</span>
+        <span class="portal-title">| CHRISTMAS CARD PORTAL</span>
+      </div>
+    </div>
+  </header>
+  <div class="divider"></div>
+  <section class="content-header">
+    <h2 class="section-title">All Uploads</h2>
+    <button class="add-new-button" (click)="navigateToUploadContainer()">
+      <span>ADD NEW</span>
+      <img
+        src="/assets/images/icn_chevron_down.png"
+        class="add-icon"
+        alt=""
+      />
+    </button>
+  </section>
+  <section class="content-body">
+    <div class="empty-state">
+      <img
+        src="/assets/images/Frame 1409.png"
+        class="empty-state-icon"
+        alt="No files found illustration"
+      />
+      <h3 class="empty-state-title">No files found</h3>
+      <p class="empty-state-description">
+        You do not have any uploads; please click on
+        <strong class="highlight" (click)="navigateToUploadContainer()">Add New</strong>
+        to begin.
+      </p>
+    </div>
+  </section>
+</main>

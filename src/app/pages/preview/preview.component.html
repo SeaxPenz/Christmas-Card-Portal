@@ -1,0 +1,90 @@
+<div class="adjust-text-container">
+  <header class="adjust-text-header">
+    <div class="header-left">
+      <button class="back-button" aria-label="Go back" (click)="onBackClick()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.8379 6.86858C11.0415 6.68198 11.0553 6.3657 10.8687 6.16214C10.6821 5.95858 10.3658 5.94483 10.1622 6.13143L4.96639 10.8943C4.31784 11.4888 4.31784 12.5112 4.96639 13.1057L10.1622 17.8686C10.3658 18.0552 10.6821 18.0414 10.8687 17.8379C11.0553 17.6343 11.0415 17.318 10.8379 17.1314L5.78549 12.5H19.5001C19.7762 12.5 20.0001 12.2761 20.0001 12C20.0001 11.7239 19.7762 11.5 19.5001 11.5H5.78549L10.8379 6.86858Z"
+            fill="#0051FF"
+          />
+        </svg>
+      </button>
+      <h1 class="adjust-text-title">Adjust Text</h1>
+    </div>
+    <button class="send-button" (click)="onSendClick()">Send</button>
+  </header>
+  <main class="adjust-text-content">
+    <div class="image-preview">
+      <img src="/assets/images/happy.png" alt="Holiday dinner scene" class="preview-image" />
+    </div>
+    <div class="text-adjustment-panel">
+      <div class="form-field">
+        <label for="fontSelect" class="form-label">Text font</label>
+        <select id="fontSelect" class="form-select">
+          <option value="" disabled selected>Choose font</option>
+          <option *ngFor="let font of fontOptions" [value]="font.value">{{ font.label }}</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label class="form-label">Alignment</label>
+        <div class="alignment-options">
+          <button
+            class="alignment-button"
+            [class.active]="selectedAlignment === 'left'"
+            (click)="updateAlignment('left')"
+            aria-label="Align left"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="6" width="16" height="2" fill="#0051FF" />
+              <rect x="4" y="11" width="10" height="2" fill="#0051FF" />
+              <rect x="4" y="16" width="14" height="2" fill="#0051FF" />
+            </svg>
+          </button>
+          <button
+            class="alignment-button"
+            [class.active]="selectedAlignment === 'center'"
+            (click)="updateAlignment('center')"
+            aria-label="Align center"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="12" height="2" fill="#C4C4C4" />
+              <rect x="8" y="11" width="8" height="2" fill="#C4C4C4" />
+              <rect x="7" y="16" width="10" height="2" fill="#C4C4C4" />
+            </svg>
+          </button>
+          <button
+            class="alignment-button"
+            [class.active]="selectedAlignment === 'right'"
+            (click)="updateAlignment('right')"
+            aria-label="Align right"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="6" width="16" height="2" fill="#C4C4C4" />
+              <rect x="10" y="11" width="10" height="2" fill="#C4C4C4" />
+              <rect x="6" y="16" width="14" height="2" fill="#C4C4C4" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="colorPicker" class="form-label">Text colour</label>
+        <div class="color-picker-wrapper">
+          <input
+            type="color"
+            id="colorPicker"
+            class="color-picker"
+            (input)="updateColorName($event)"
+          />
+          <input
+            type="text"
+            id="colorCode"
+            class="color-code"
+            placeholder="Enter color code"
+            (input)="updateColorFromCode($event)"
+          />
+          <span class="color-name">{{ selectedColorName }}</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

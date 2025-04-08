@@ -1,0 +1,81 @@
+<div class="portal-container">
+  <header class="portal-header">
+    <img
+      src="assets/images/Stanbic.png"
+      alt="Stanbic IBTC Logo"
+      class="portal-logo"
+    />
+    <div class="user-info">
+      <div class="user-avatar-name">
+        <img
+          src="assets/images/icn_people_profile.png"
+          alt="User Avatar"
+          class="user-avatar"
+        />
+        <span class="user-name">Abraham Ajetomobi</span>
+      </div>
+      <h1 class="portal-title">| CHRISTMAS CARD PORTAL</h1>
+    </div>
+  </header>
+  <hr class="divider" />
+  <main class="portal-main">
+    <div class="uploads-header">
+      <h2 class="uploads-title">All Uploads</h2>
+      <button class="add-new-btn" (click)="showUploadTypes()">
+        ADD NEW
+        <img
+          src="assets/images/icn_chevron_down.png"
+          alt="Add New Icon"
+          class="add-icon"
+        />
+      </button>
+    </div>
+    <div class="uploads-table">
+      <div class="table-header">
+        <div class="table-row">
+          <span>#</span>
+          <span>Year</span>
+          <span>Uploaded by</span>
+          <span class="actions-header">Actions</span>
+        </div>
+      </div>
+      <div class="table-body">
+        <div class="table-row" *ngFor="let item of uploadItems; let i = index">
+          <span>{{ i + 1 }}</span>
+          <span>{{ item.year }}</span>
+          <span>{{ item.uploadedBy }}</span>
+          <div class="action-buttons">
+            <button class="view-btn" (click)="onView(item)">View</button>
+            <button class="download-btn" (click)="onDownload(item)">Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <aside class="upload-types" *ngIf="showTypes" aria-label="Upload types">
+    <div class="upload-type" (click)="navigateToUploadContainer('image')">
+      <img
+        src="assets/images/icn_image.png"
+        alt="Image Icon"
+        class="upload-type-icon"
+      />
+      <span>Image</span>
+    </div>
+    <div class="upload-type" (click)="navigateToUploadContainer('gif')">
+      <img
+        src="assets/images/gif.png"
+        alt="Gif Icon"
+        class="upload-type-icon"
+      />
+      <span>Gif</span>
+    </div>
+    <div class="upload-type" (click)="navigateToUploadContainer('video')">
+      <img
+        src="assets/images/icn_filmstrip.png"
+        alt="Video Icon"
+        class="upload-type-icon"
+      />
+      <span>Video</span>
+    </div>
+  </aside>
+</div>

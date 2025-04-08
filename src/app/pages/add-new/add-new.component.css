@@ -1,0 +1,191 @@
+:host {
+    display: contents;
+  }
+  .home {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 29px 80px 83px 31px;
+  }
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  .logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .logo {
+    width: 150px;
+    object-fit: contain;
+  }
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: right;
+    margin-left: auto;
+  }
+  .user-dropdown {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: var(--neutrals-light-grey-text-subdued, #5c6c80);
+    text-align: right;
+    justify-content: flex-start;
+    margin: auto 0;
+  }
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .user-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #5c6c80;
+  }
+  .portal-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #5c6c80;
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ced3d9;
+    margin: 20px 0;
+  }
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222e37;
+  }
+  .add-new-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0062e1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .add-new-button:hover {
+    background-color: #0051cc;
+  }
+  .add-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .content-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+  }
+  .empty-state {
+    text-align: center;
+  }
+  .empty-state-icon {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  .empty-state-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222e37;
+    margin-bottom: 10px;
+  }
+  .empty-state-description {
+    font-size: 16px;
+    color: #5c6c80;
+  }
+  .highlight {
+    color: #0051ff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .highlight:hover {
+    text-decoration: none;
+  }
+  @media (max-width: 991px) {
+    .home {
+      padding: 0 20px;
+    }
+    .header {
+      max-width: 100%;
+    }
+    .content-header {
+      max-width: 100%;
+    }
+    .content-body {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 0 20px 100px;
+    }
+    .empty-state {
+      margin-bottom: 10px;
+    }
+    .empty-state-icon {
+      max-width: 100%;
+      margin-right: 6px;
+    }
+    .empty-state-description {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 640px) {
+    .logo {
+      left: 21px;
+      top: 17px;
+      width: 120px;
+    }
+    .user-avatar {
+      margin-left: 85px;
+    }
+    .user-name {
+      padding-left: -11px;
+    }
+    .empty-state-icon {
+      margin: 22px 0 -62px;
+    }
+    .empty-state-title {
+      padding-top: 13px;
+      margin: 48px 0 -15px;
+    }
+    .empty-state-description {
+      text-align: center;
+    }
+  }

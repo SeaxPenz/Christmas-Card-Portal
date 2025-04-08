@@ -1,1 +1,274 @@
-/* You can add global styles to this file, and also import other style files */
+:host {
+  display: contents;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.login-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  font-family: Benton Sans Pro, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  background-image: url('/assets/images/cover.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+.logo {
+  aspect-ratio: 2.5;
+  object-fit: contain;
+  object-position: center;
+  width: 120px;
+  z-index: 20;
+}
+
+.login-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1167px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  font-size: 56px;
+  color: #0033aa;
+  line-height: 84px;
+  text-align: center;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.portal-title {
+  align-self: center;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.decorative-line {
+  aspect-ratio: 16.39;
+  object-fit: contain;
+  object-position: center;
+  width: 442px;
+  margin-top: 12px;
+}
+
+.login-form-container {
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.welcome-text {
+  color: #02070d;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 0 16px 0;
+}
+
+.login-instruction {
+  color: #465463;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+  color: #5c6c80;
+}
+
+.form-input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #5c6c80;
+  background-color: #fff;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.toggle-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.eye-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 24px;
+}
+
+.login-button {
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: #0062e1;
+  margin-top: 24px;
+  min-height: 50px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+@media (max-width: 991px) {
+  .login-content {
+    padding: 20px;
+  }
+
+  .login-form-container {
+    padding: 20px;
+  }
+
+  .header {
+    font-size: 40px;
+    line-height: 67px;
+  }
+
+  .portal-title {
+    font-size: 40px;
+    line-height: 67px;
+  }
+}
+
+@media (max-width: 640px) {
+  .login-form-container {
+    padding: 20px;
+  }
+
+  .portal-title {
+    text-align: center;
+  }
+
+  .eye-icon {
+    margin-left: -26px;
+  }
+}

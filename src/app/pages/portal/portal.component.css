@@ -1,0 +1,248 @@
+.portal-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  padding: 20px 40px;
+}
+
+.portal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.portal-logo {
+  width: 180px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-avatar-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.portal-title {
+  font-size: 14px;
+  color: #666;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.uploads-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.uploads-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-new-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #0167d4;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-new-btn:hover {
+  background-color: #004494;
+}
+
+.add-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.uploads-table {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 30px; 
+  border: 1px solid #e3e6ea;
+  border-radius: 8px;
+  overflow: hidden;
+  border-collapse: collapse;
+    text-align: center;
+  }
+
+
+.table-header {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  padding: 15px 10px; 
+  text-align: center;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.table-row:hover {
+  background-color: #f1f1f1;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center; 
+  gap: 8px;
+}
+
+.view-btn,
+.download-btn {
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.view-btn {
+  border: 1px solid #0056b3;
+  background-color: white;
+  color: #0056b3;
+}
+
+.download-btn {
+  border: 1px solid #0056b3;
+  background-color: #0056b3;
+  color: white;
+}
+
+.view-btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.download-btn:hover {
+  background-color: #003bb3;
+}
+
+.upload-types {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.upload-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 30px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.upload-type:hover {
+  transform: scale(1.05);
+}
+
+.upload-type-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.upload-type span {
+  font-size: 14px;
+  color: #5c6c80;
+}
+
+@media (max-width: 991px) {
+  .portal-container {
+    padding: 0 20px 100px;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 640px) {
+  .portal-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-info {
+    margin-top: 16px;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,248 @@
+.portal-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: Benton Sans Pro, -apple-system, Roboto, Helvetica, sans-serif;
+    padding: 29px 76px 101px;
+    cursor: pointer;
+  }
+
+  .button-group{
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    justify-content: justify;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .portal-header {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .portal-logo {
+    aspect-ratio: 3.75;
+    object-fit: contain;
+    object-position: center;
+    width: 120px;
+    align-self: start;
+    max-width: 100%;
+    padding-top: 3px;
+    margin: -7px 0 0 -50px;
+  }
+  .user-info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .user-dropdown {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: var(--neutrals-light-grey-text-subdued, #5c6c80);
+    text-align: right;
+    justify-content: start;
+    margin: auto 0;
+  }
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: start;
+    padding: 8px;
+  }
+  .profile-picture {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  .username {
+    align-self: stretch;
+    gap: 8px;
+    margin: auto 0;
+  }
+  .portal-title {
+    align-self: stretch;
+    min-height: 40px;
+    gap: 10px;
+    color: #465463;
+    margin: auto 0;
+  }
+  .divider {
+    margin-top: 24px;
+    width: 100%;
+    max-width: 1279px;
+    height: 1px;
+    background-color: #ced3d9;
+  }
+  .content-header {
+    display: flex;
+    margin-top: 38px;
+    width: 100%;
+    gap: 20px;
+    font-weight: 700;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .section-title {
+    color: #222e37;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: auto 0;
+    border: 1px solid #e3e6ea;
+  }
+  .add-new-button {
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #e3e6ea;
+    background-color: var(--primary-secondary-color, #0062e1);
+    display: flex;
+    min-height: 50px;
+    gap: 40px 52px;
+    font-size: 16px;
+    color: var(--neutrals-white, #fff);
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 13px 20px;
+    cursor: pointer;
+  }
+  .add-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  .uploads-table {
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #e3e6ea;
+    display: flex;
+    margin-top: 38px;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .table-header {
+    border-radius: 8px 8px 0 0;
+    background-color: #f4f5f7;
+    padding: 23px 48px;
+  }
+  .table-row {
+    display: flex;
+    gap: 40px 100px;
+    color: #02070d;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .sort-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 18px;
+  }
+  .actions-header {
+    flex-grow: 1;
+    width: 271px;
+  }
+  .table-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .table-row {
+    border-top: 1px solid #f4f5f7;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    font-weight: 400;
+    justify-content: space-between;
+    padding: 14px 64px;
+  }
+  .row-number, .year, .uploader {
+    color: #000;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  .actions {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+    justify-content: start;
+  }
+  .view-button, .download-button {
+    align-self: stretch;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  .view-button {
+    background-color: #e3e6ea;
+    color: #02070d;
+  }
+  .download-button {
+    color: #0033aa;
+    border: 1px solid #003fca;
+  }
+  .action-divider {
+    align-self: stretch;
+    width: 1px;
+    height: 37px;
+    margin: auto 0;
+    background-color: #ced3d9;
+  }
+  @media (max-width: 991px) {
+    .portal-container {
+      padding: 0 20px 100px;
+    }
+    .portal-header, .content-header, .uploads-table {
+      max-width: 100%;
+    }
+    .portal-logo {
+      margin-left: -1px;
+    }
+    .user-info {
+      margin: 0 auto;
+    }
+    .username, .portal-title {
+      text-align: left;
+    }
+    .divider {
+      margin-right: 2px;
+    }
+    .table-header, .table-row {
+      padding: 23px 20px;
+    }
+  }
+  @media (max-width: 640px) {
+    .portal-logo {
+      margin-left: -1px;
+    }
+    .user-info {
+      margin: 0 auto;
+    }
+    .username, .portal-title {
+      text-align: left;
+    }
+    .portal-title {
+      width: auto;
+      flex-grow: 1;
+    }
+  }
