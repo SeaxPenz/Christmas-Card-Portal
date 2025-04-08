@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { PortalComponent } from './pages/portal/portal.component';
 import { routes } from './app.routes';
-import { AppRoutingModule } from './app-routing.module';
 
 import { Router } from '@angular/router';
 
@@ -55,9 +54,8 @@ export class LocalPreviewComponent {
   declarations: [],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot([])
   ],
-  bootstrap: [AppComponent],
   providers: []
 })
 export class AppModule { }
