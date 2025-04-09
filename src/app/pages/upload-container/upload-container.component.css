@@ -53,15 +53,16 @@
 }
 
 .upload-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto
 }
 
 .upload-image {
-  width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -70,10 +71,12 @@
 .upload-form {
   width: 50%;
   max-width: 357px;
+  justify-content: center;
 }
 
 .form-fields {
   border: 1px solid #e5e7eb;
+  align-content: center;
   border-radius: 8px;
   margin-bottom: 24px;
   background-color: #fff;
@@ -81,6 +84,8 @@
 
 .form-field {
   border-bottom: 1px solid #e5e7eb;
+  align-items: center;
+  align-content: center;
 }
 
 .form-field:last-child {

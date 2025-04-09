@@ -15,13 +15,27 @@
   <img src="/assets/images/align-center.png" alt="Menu" />
 </button>
 <ul class="navbar-links" [class.active]="isNavbarOpen">
-  <li><a href="/login">Home</a></li>
-  <li><a href="/portal">Uploads</a></li>
-  <li><a href="/add-new">Add New</a></li>
-  <li><a href="/upload-container">Upload Container</a></li>
-  <li><a href="/preview">Preview</a></li>
-  <li><a href="/success-container">Upload Success</a></li>
-  <li><a href="/cancel-uploads">Cancel Uploads</a></li>
+  <li>
+    <a routerLink="/login" routerLinkActive="active-link">Home</a>
+  </li>
+  <li>
+    <a routerLink="/portal" routerLinkActive="active-link">Uploads</a>
+  </li>
+  <li>
+    <a routerLink="/add-new" routerLinkActive="active-link">Add New</a>
+  </li>
+  <li>
+    <a routerLink="/upload-container" routerLinkActive="active-link">Upload Container</a>
+  </li>
+  <li>
+    <a routerLink="/preview" routerLinkActive="active-link">Preview</a>
+  </li>
+  <li>
+    <a routerLink="/success-container" routerLinkActive="active-link">Upload Success</a>
+  </li>
+  <li>
+    <a routerLink="/cancel-uploads" routerLinkActive="active-link">Cancel Uploads</a>
+  </li>
 </ul>
 
 <router-outlet></router-outlet>

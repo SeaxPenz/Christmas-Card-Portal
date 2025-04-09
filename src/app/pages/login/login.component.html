@@ -32,9 +32,21 @@
             <input type="text" class="form-input" placeholder="SAP ID" />
           </div>
           <div class="form-group password-input-wrapper">
-            <input type="password" class="form-input" placeholder="Password" />
-            <button type="button" class="toggle-password">
-              <img src="/assets/images/eye-icon.png" alt="Toggle Password" class="eye-icon" />
+            <input
+              type="{{ showPassword ? 'text' : 'password' }}"
+              class="form-input"
+              placeholder="Password"
+            />
+            <button
+              type="button"
+              class="toggle-password"
+              (click)="togglePasswordVisibility()"
+            >
+              <img
+                [src]="showPassword ? '/assets/images/Eye.png' : '/assets/images/Blind.svg'"
+                alt="Toggle Password"
+                class="eye-icon"
+              />
             </button>
           </div>
           <button type="submit" class="login-button">Login</button>

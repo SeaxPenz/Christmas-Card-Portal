@@ -120,7 +120,7 @@
   align-self: start;
   margin: 0;
   font-weight: 600;
-  margin-top: -60px;
+  margin-top: -80px;
   margin-bottom: -10px;
 }
 
@@ -150,7 +150,7 @@
   padding: 12px;
   border-radius: 8px;
   border: 1px solid #5c6c80;
-  font-size: 16px;
+  font-size: 14px;
   outline: none;
 }
 
@@ -173,8 +173,8 @@
 }
 
 .eye-icon {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
 }
 
 .login-button {
@@ -199,7 +199,7 @@
 .forgot-password {
   display: block;
   margin-top: 10px;
-  margin-bottom: -10px;
+  margin-bottom: -50px;
   font-weight: 500;
   font-size: 15px;
   color: #0062e1;
@@ -210,7 +210,7 @@
 
 .forgot-password:hover {
   text-decoration: underline;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .login-footer-text {
