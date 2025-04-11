@@ -47,7 +47,7 @@
   .user-profile {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
   }
   .user-avatar {
     width: 32px;
@@ -172,8 +172,17 @@
       top: 17px;
       width: 120px;
     }
+
+    .header {
+      justify-content: center;
+    }
+
     .user-avatar {
       margin-left: 85px;
+    }
+
+    .user-info {
+      padding: auto 0;
     }
     .user-name {
       padding-left: -11px;
@@ -187,5 +196,33 @@
     }
     .empty-state-description {
       text-align: center;
+      padding-top: 20px;
     }
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; 
+      padding: 10px 20px;
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px; 
+      white-space: nowrap; 
+    }
+
+    .user-avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      object-fit: cover;
+    } 
   }

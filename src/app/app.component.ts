@@ -18,4 +18,8 @@ export class AppComponent {
   toggleNavbar(): void {
     this.isNavbarOpen = !this.isNavbarOpen;
   }
+
+  closeNavbar(): void {
+    this.isNavbarOpen = false;
+  }
 }

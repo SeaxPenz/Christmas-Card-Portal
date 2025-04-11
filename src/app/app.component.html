@@ -16,25 +16,25 @@
 </button>
 <ul class="navbar-links" [class.active]="isNavbarOpen">
   <li>
-    <a routerLink="/login" routerLinkActive="active-link">Home</a>
+    <a routerLink="/login" routerLinkActive="active-link" (click)="closeNavbar()">Home</a>
   </li>
   <li>
-    <a routerLink="/portal" routerLinkActive="active-link">Uploads</a>
+    <a routerLink="/portal" routerLinkActive="active-link" (click)="closeNavbar()">Uploads</a>
   </li>
   <li>
-    <a routerLink="/add-new" routerLinkActive="active-link">Add New</a>
+    <a routerLink="/add-new" routerLinkActive="active-link" (click)="closeNavbar()">Add New</a>
   </li>
   <li>
-    <a routerLink="/upload-container" routerLinkActive="active-link">Upload Container</a>
+    <a routerLink="/upload-container" routerLinkActive="active-link" (click)="closeNavbar()">Upload Container</a>
   </li>
   <li>
-    <a routerLink="/preview" routerLinkActive="active-link">Preview</a>
+    <a routerLink="/preview" routerLinkActive="active-link" (click)="closeNavbar()">Preview</a>
   </li>
   <li>
-    <a routerLink="/success-container" routerLinkActive="active-link">Upload Success</a>
+    <a routerLink="/success-container" routerLinkActive="active-link" (click)="closeNavbar()">Upload Success</a>
   </li>
   <li>
-    <a routerLink="/cancel-uploads" routerLinkActive="active-link">Cancel Uploads</a>
+    <a routerLink="/cancel-uploads" routerLinkActive="active-link" (click)="closeNavbar()">Cancel Uploads</a>
   </li>
 </ul>
 

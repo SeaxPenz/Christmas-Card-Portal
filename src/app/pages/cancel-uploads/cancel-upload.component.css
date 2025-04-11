@@ -122,3 +122,17 @@
 .back-button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 991px) {
+  .cancel-modal {
+    padding: 0 20px;
+  }
+
+  .modal-actions {
+    white-space: initial;
+  }
+
+  .action-button {
+    white-space: initial;
+  }
+}
